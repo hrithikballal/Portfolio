@@ -74,7 +74,12 @@
     height: 100px;
    display: flex;
    justify-content: center;
-   margin-top: 30px;
+  }
+  .li
+  {
+    display: flex;
+   justify-content: center;
+   align-items: center;
   }
   .sch{
     background: transparent;
@@ -87,12 +92,11 @@
    width: 200px;
    font-size: 15px  ;
    padding-left:0px;
-
   }
   .button{
-    border: 0px;
-    background-color:aqua;
-    color:black;
+   border: 0px;
+   background-color:aqua;
+   color:black;
    border-bottom-right-radius: 10px;
    border-top-right-radius: 10px;
    height: 35px;
@@ -278,4 +282,74 @@
  margin-bottom: -40px;
 }
 }
+
+@media only screen and (max-width: 500px) {
+
+  .main{
+    width: 500px;
+    height: 900px;
+    margin: 0;
+  }
+  .nav
+  {
+    width: 200px;
+    height:50px;
+    margin: 0;
+  }
+  .icon
+  {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .head{
+    font-size: 5px;
+  }
+  .menu{
+    width: 100px;
+    height: 50px;
+    margin: 0;
+  }
+  ul{
+    width: 100px;
+  }
+  ul li {
+   font-size:5px;
+  }
+  .search{
+    width: 100px;
+    height: 50px;
+    margin: 0;
+
+  }
+  .sch{
+   height: 10px;
+   width: 20px;
+   font-size: 15px  ;
+   align-items: center;
+  }
+  .button{
+   height: 15px;
+   width: 15px;
+   font-size: 5px;
+   align-items: center;
+  }
+  .section
+  {
+    width: 400px;
+    height: 200px;
+  }
+  .im{
+    width: 200px;
+    height: 200px;
+  }
+  .ab{
+    width: 200px;
+    height: 200px;
+  }
+  .footer
+  {
+    width: 400px;
+  }
+  }
 
