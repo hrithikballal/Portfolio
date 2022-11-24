@@ -33,6 +33,7 @@
     font-family: Arial;
     color: aqua;
     padding-top: 20px;
+    text-shadow: 1px 1px 7px aqua;
   }
   .menu
   {
@@ -60,10 +61,12 @@
       transition: 0.3s ease-in-out;
       display: flex;
     justify-content: center;
+    text-shadow: 1px 1px 7px aqua;
   }
   ul li a:hover
   {
       color: rgb(233, 73, 15);
+      text-shadow: 1px 1px 7px rgb(233, 73, 15);
   }
   .search{
     width: 500px;
@@ -195,6 +198,8 @@
     color :aqua;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: text 3s 1;
+    text-indent: 50px;
+    
 }
 .down{
   
@@ -242,7 +247,7 @@
 }
 .sm
 {
-  width:100;
+   width:100%;
     height: 70px;
     display: flex;
     justify-content: center;  
@@ -263,8 +268,9 @@
 }
 .insta
 {
-  
-  margin-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 @keyframes text{
 0%{
