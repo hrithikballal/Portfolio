@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRITHIK BALLAL | SERVICE</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="uiux.css">
+    <link rel="icon" href="./IMAGES/LOGO.ico">
+    <script lang="javascript" src="/index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <nav class="nav" >
+            <header class="icon">
+                <h2 class="head">HRITHIK&nbsp;BALLAL</h2>
+            </header>
+            <div class="menu">
+                <ul class="bar">
+                    <li class="home"><a href="./index.html">HOME</a></li>
+                    <li class="dropdown"><button class="dropbtn">SERVICE</button>
+                      <div class="dropdown-content">
+                        <a class="item" href="./uiux.html">UI / UX</a>
+                        <a  class="item" href="#">WEBPAGE</a>
+                        <a  class="item" href="#">FRONTEND</a>
+                        <a  class="item" href="#">GRAPHICS</a>
+                        </div>
+                    </li>
+                    <li class="about"><a href="SERIVCE">ABOUT</a></li>
+                    <li class="contact"><a href="CONTACT">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <ul class="ls" >
+                <li class="li" ><input class="sch" type="search" placeholder="        Type to search"></li>
+                <li class="li"><a href="https://www.google.co.in/"><button class="button">Search</button></a></li>
+                </ul>
+            </div>
+            <div class="table"> 
+            </div>
+        </nav>
+        <div class="ui">
+            <h1 style="text-align: center;">UI / UX</h1>
+            <div class="show" >
+            <img class="mySlides" src="UIUX/ui 4.jpg">
+                <img class="mySlides" src="/UIUX/ui1 (1).jpg">
+                <img class="mySlides" src="/UIUX/ui1 (2).jpg">
+                <img class="mySlides" src="UIUX/ui1 (3).jpg" >
+              </div>
+           <h1>What is UI Design?</h1>
+           <p class="in">
+The “UI” in UI design stands for “user interface.” The user interface is the graphical layout 
+of an application. It consists of the buttons users click on, the text they read, the images, 
+sliders, text entry fields, and all the rest of the items the user interacts with. This includes
+ screen layout,transitions, interface animations and every single micro-interaction.
+  Any sort of visual element, interaction, or animation must all be designed.
+        </p>
+    <h1>What is Ux Design?</h1>
+    <p class="in">
+“UX” stands for “user experience.” A user’s experience of the app is determined by how they 
+interact with it. Is the experience smooth and intuitive or clunky and confusing? 
+Does navigating the app feel logical or does it feel arbitrary? Does interacting with the 
+app give people the sense that they’re efficiently accomplishing the tasks they set out to 
+achieve or does it feel like a struggle? User experience is determined by how easy or 
+difficult it is to interact with the user interface elements that the UI designers have created.
+</p>
+</div>
+<div class="apply">
+ <button class="app"  onclick="pop()">APPLY FOR SERVICE</button>
+</div> 
+
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>

@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="./IMAGES/LOGO.ico">
     <script src="./index.js"></script>
-    <title>HRITHIK BALLAL | PROFILE</title>
+    <title>HRITHIK BALLAL | HOME</title>
 </head>
 <body>
-    <main class="main">
+    <div class="main">
         <nav class="nav" >
             <header class="icon">
                 <h2 class="head">HRITHIK&nbsp;BALLAL</h2>
             </header>
             <div class="menu">
-                <ul>
-                    <li onclick=""><a href="HOME">HOME</a></li>
-                    <li><a href="ABOUT">ABOUT</a></li>
-                    <li><a href="SERIVCE">SERVICE</a></li>
-                    <li><a href="CONTACT">CONTACT</a></li>
+                <ul class="bar">
+                    <li class="home"><a href="./index.html">HOME</a></li>
+                    <li class="dropdown"><button class="dropbtn">SERVICE</button>
+                      <div class="dropdown-content">
+                        <a class="item" href="./uiux.html">UI / UX</a>
+                        <a  class="item" href="#">WEBPAGE</a>
+                        <a  class="item" href="#">FRONTEND</a>
+                        <a  class="item" href="#">GRAPHICS</a>
+                        </div>
+                    
+                    
+                    
+                    </li>
+                    <li class="about"><a href="SERIVCE">ABOUT</a></li>
+                    <li class="contact"><a href="CONTACT">CONTACT</a></li>
                 </ul>
             </div>
             <div class="search">
-                <ul>
+                <ul class="ls" >
                 <li class="li" ><input class="sch" type="search" placeholder="        Type to search"></li>
                 <li class="li"><a href="https://www.google.co.in/"><button class="button">Search</button></a></li>
                 </ul>

@@ -48,17 +48,17 @@
   justify-content: center;
  
 }
-ul{
+.bar{
     width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-ul li{
+.bar li{
     list-style: none;
     font-size: 14px;
 }
-ul li a{
+.bar li a{
     text-decoration: none;
     color: aqua;
     font-family: Arial;
@@ -74,6 +74,50 @@ ul li a:hover
     text-shadow: 1px 1px 7px rgb(233, 73, 15);
     transform: scale(1.1);
 }
+/* DROPBOX */
+.dropbtn {
+  background-color: transparent;
+  color: aqua;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 16px;
+  border: none;
+  text-shadow: 1px 1px 7px aqua;
+}
+.dropbtn:hover
+{
+    color: rgb(233, 73, 15);
+    text-shadow: 1px 1px 7px rgb(233, 73, 15);
+    transform: scale(1.1);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-shadow: none;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* DROPBOX */
 .search{
   width: 235px;
   height: 100px;
@@ -82,11 +126,13 @@ ul li a:hover
  position: relative;
  right: 10px;
 }
-.li
+
+.ls
 {
   display: flex;
  justify-content: center;
  align-items: center;
+ list-style: none;
 }
 .sch{
   background: transparent;
@@ -99,10 +145,6 @@ ul li a:hover
  width: 200px;
  font-size: 15px  ;
  padding-left:0px;
- transition: 0.5s;
-}
-.search:hover{
-  transform: scale(1.1);
 }
 .button{
  border: 0px;
@@ -158,6 +200,7 @@ margin-left: 20px;
   float: left;
   display:flex ;
   justify-content: space-between 2px;
+  
 }
 .ig
 {
@@ -254,7 +297,7 @@ transition: 0.5s;
   width:100%;
   height: 170px;
   background: linear-gradient(to top ,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)99%);
-  justify-items: center; 
+  /* justify-items: center;  */
 }
 .data
 {
@@ -264,6 +307,17 @@ float: left;
 padding-bottom: 10px;
 display: flex;
 justify-content: center;
+}
+.ss{
+width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ss li{
+list-style: none;
+display: flex;
+justify-content: space-around;
 }
 .sm
 {
