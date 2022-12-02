@@ -74,6 +74,8 @@ h1:hover,.in:hover
     }
     
 }
+
+/* images */
 .mySlides {
   padding: 20px;
   width: 1000px;
@@ -101,4 +103,3 @@ h1:hover,.in:hover
   border: none;
  padding-top: 300px;
 }
-
