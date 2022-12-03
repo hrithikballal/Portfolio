@@ -487,6 +487,7 @@ ul li {
   height: 160px;
   width: 160px;
   border-radius: 80px;
+  animation: none;
 }
 .rot
 {
