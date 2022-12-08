@@ -180,20 +180,7 @@
   display: flex;
   justify-content: space-between 50px;
 }
-#click1
-{
-width: 20px;
-height: 20px;
-border-top: solid 4px aqua;
-border-left: solid 4px aqua;
-border-bottom: 0;
-border-right: 0;
-background: transparent;
-transform: rotate(-45deg); 
-float: left;
-margin-top: 160px;
-margin-left: 20px;
-}
+
 
 .im{
   width: 600px;
@@ -244,22 +231,6 @@ margin-left: 20px;
 .im:hover
 {
 transform: scale(1.1);
-}
-#click1:hover,#click2:hover
-{
-color:white;
- border-color: rgb(233, 73, 15);
-}
-#click2
-{width: 20px;
-height: 20px;
-border-top: 0;
-border-left:0;
-border-bottom: solid 4px aqua;
-border-right: solid 4px aqua;
-background: transparent;
-transform: rotate(-45deg); 
-margin-top: 160px;
 }
 .ab{
   width: 600px;
@@ -616,5 +587,10 @@ height:auto;
   width: 30px;
   height: 30px;
 }
+.head:hover,.dropbtn:hover,.bar li a:hover,.button:hover,.im:hover,.con1:hover,.con2:hover,.in:hover,.insta:hover,.fb:hover,.fb:hover,.twitter:hover,.linked:hover,.butt:hover
+{
+  transform: none;
+}
+
 }
 
