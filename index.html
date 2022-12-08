@@ -11,6 +11,23 @@
 <body>
     <div class="main">
         <nav class="nav" >
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="/index.html">HOME</a>
+                  <li class="dropdown"><button class="dropbtn">SERVICE</button>
+                    <div class="dropdown-content">
+                      <a class="item" href="/ui/uiux.html">UI / UX</a>
+                      <a  class="item" href="/web/web.html">WEBPAGE</a>
+                      <a  class="item" href="/front/front.html">FRONTEND</a>
+                      <a  class="item" href="/graphic/graphic.html">GRAPHICS</a>
+                      </div>
+                  </li>
+                  <a href="/about/about.html">ABOUT</a>
+                  <a href="/contact/contact.html">CONTACT</a>
+                </div>
+              </div>
+              <span class="span" onclick="openNav()">&#9776;</span>
             <header class="icon">
                 <h2 class="head">HRITHIK&nbsp;BALLAL</h2>
             </header>
@@ -34,8 +51,6 @@
                 <li class="li" ><input class="sch" type="search" placeholder="        Type to search"></li>
                 <li class="li"><a href="https://www.google.co.in/"><button class="button">Search</button></a></li>
                 </ul>
-            </div>
-            <div class="table"> 
             </div>
         </nav>
         <section class="info">
@@ -76,27 +91,15 @@
                    </div>
         </footer>
     </main>
-<!-- <script lang="javacript">
-    var images=["images/myimage2.jpg","images/img1.jpg","images/img2.jpg","images/img3.jpg","images/img4.jpg","images/img5.jpg","images/img6.jpg","images/img7.jpg","images/img8.jpg","images/img9.jpg"];
-count = 0;
-function prev(){
-    if(count>0){
-    var pic = document.getElementById("img");
-    count--;
-    pic.src=images[count];
-    }
-
-}
-function next()
-{
-    if(count<=8)
-    {
-        var pic =document.getElementById("img");
-        count++;
-        pic.src=images[count];
-    }
-}
-</script> -->
+    <script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
 </body> 
 </html>
 

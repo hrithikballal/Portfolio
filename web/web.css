@@ -1,0 +1,32 @@
+.web
+{
+    width: 100%;
+    height: auto;
+}
+h1{
+    color: white;
+    font-family: Arial;
+    font-style: bold; 
+    animation-name: n;
+    animation-duration: 1s;  
+    position: relative;
+    left: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.webs{
+    padding: 20px 40px 20px 20px;
+    color: aqua;
+    font-size: 15px;
+    font-family: Arial;
+    text-indent: 30px;
+    animation-name: n;
+    animation-duration: 1s; 
+    animation-delay: 0.1s; 
+    position: relative;
+    left: 0px;
+}
+h1:hover,.webs:hover
+{
+    transform: scale(1.01);
+}

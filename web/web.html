@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRITHIK BALLAL | SERVICE</title>
-    <link rel="stylesheet" href="/web.css">
+    <link rel="stylesheet" href="./web.css">
     <link rel="stylesheet" href="/index.css">
     <link rel="icon" href="/images/LOGO.ico">
 </head>
@@ -39,6 +39,61 @@
             <div class="table"> 
             </div>
         </nav>
-        <h1 style="color: white;">WEBPAGE</h1>
+
+
+
+        <div class="web">
+        <h1>WEBPAGE</h1>
+        <p class="webs">A web page is often used to provide information to viewers, including pictures or videos to help illustrate important topics. 
+            A web page may also be used as a method to sell products or services to viewers.
+             Multiple web pages make up a website, like our Computer Hope website. When you click a link provided by a search engine,
+              you are accessing a web page. The Internet consists of millions of web pages, with more being added every day.</p>
+        </div>
+
+
+        <div class="show">
+            <button class="arrow" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="mySlides" src="./images/web1.hdr" >
+            <img class="mySlides" src="./images/web2.jpg" >
+            <img class="mySlides" src="./images/web3.jpg">
+            <img class="mySlides" src="./images/web4.jpg" >
+            <button class="arrow" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+
+
+          <footer class="footer">
+            <h4 class="h2">SOCIAL MEDIA</h4>
+                <div class="sm">
+            <ul class="ss" >
+                   <li> <a href="https://www.instagram.com/hrithik_ballal?r=nametag"><img class="insta" src="/images/logo1.png" alt="" ></a></li> 
+                   <li> <a href="https://www.facebook.com/hrithikballalhbr123"><img class="fb" src="/images/fblogo.png" alt="" ></a></li> 
+                   <li> <a href="https://twitter.com/hrithik_ballal?t=G_GKVsouDwBGgRUO9KeTxA&s=08"><img class="twitter" src="/images/twitterlogo.png" alt="" ></a></li> 
+                   <li> <a href="https://www.linkedin.com/in/hrithik-ballal-br-35b467240"><img class="linked" src="/images/linkedin.png" alt="" ></a></li> 
+                   </ul>
+                </div>
+                <div class="data">
+                    <h4 class="h1">Copyright © 2022 by Hrithik Ballal. All Rights Reserved.</h4>
+                   </div>
+        </footer>
+            </div>
+            <script>
+                var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+                </script>
 </body>
 </html>
